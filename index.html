@@ -6,34 +6,52 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
 </head>
 <body>
-    <h2>Flight System</h1>
 
-    <p>This website is going to be used to track your recent flight history and other information relating to your travel you have taken.
+    <!--This small section is just used for the heading of the page but I also included a attribute that makes the text span across the middle of the page
+    I use this attribute multiple diffrent times throughout the website.-->
+    <h2 style="display: block;text-align:center;">Flight System</h1>
+
+    <p style="display: block;text-align:center;">This website is going to be used to track your recent flight history and other information relating to your travel you have taken.
         Some things that you will notice are on this website are tables including past flights from destination to destination, 
         images of the places you have travelled to, the website you used to book all of the flights, and input for planning your next trip!
     </p>
 
+    <!-- The next to sections are used to travel from the home page to the sub page(s)-->
+    <a href="index.html" width="50%" style="display: block;text-align:center;">
+        Home
+    </a>
+
+    <a href="past-travelling.html" width="50%" style="display: block;text-align:center;">
+        Past And Future Travelling
+    </a>
+    
+
     <!-- This Portion of code is the photos that are presensented on the website. I have the width set to 33% so it will adjust better on screen sizes 
         and the images will always be beside one another and never on top of eachother,but the height set to 400 because that is harder to maintain.-->
     <img src ="https://cdn.planeandpilotmag.com/2019/12/10-more-cheapest-planes-web.jpg" 
-    alt="Plane over bright blue water" width="33%" height ="400">
+    alt="Plane over bright blue water" width="33%" height ="300">
 
     <img src ="https://www.mindfood.com/wp-content/themes/mindfood-theme/timthumb.php?src=/wp-content/uploads/2018/12/Pool-M.jpeg&w=700&h=700&zc=1" 
-    alt="Man on edge of infinity Pool-M" width="33%" height ="400">
+    alt="Man on edge of infinity Pool-M" width="33%" height ="300">
 
     <img src ="https://media.cntraveler.com/photos/5d7bdb050853410008337588/master/w_1015,h_650,c_limit/princevilleI-Infinity-Pool.jpg" 
-    alt="A resort on a nice day" width="33%" height ="400"><br></br><br></br>
+    alt="A resort on a nice day" width="33%" height ="300"><br></br>
 
     <!-- This first iframe is going to be used to display how to book a flight using expedia.ca and they should be able to watch it right from the website.-->
-    <iframe src="https://www.youtube.com/watch?v=t6qvLhZ_zc4" title="Description" width="45%" height ="400"></iframe>
+    <iframe width="50%" height="315" src="https://www.youtube.com/embed/eI0Et3n8qO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <!-- The second iframe is going to be used to take them right to expedia.ca-->
-    <iframe src="https://www.expedia.ca/" title="Description" width="15%" height ="100"></iframe>
+    <iframe sandbox="allow-scripts allow-same-origin allow-popups allow-forms" name="ptec" frameborder="0" width="49%" height="315"></iframe>
 
+    <!-- This section of code makes it possible so that a imbedded link can be clicked making an iframe appear with a website of my desire-->
+    <a href="https://en.wikipedia.org/wiki/Expedia" target="ptec" width="50%" style="display: block;text-align:center;">
+        Display Expedia Information Page
+    </a>
+   
 
-
-
-
+    <p style="display: block;text-align:center;">Above you will find a youtube video (on the left hand side) which will show you all the tips and tricks you should follow to get
+    the best prices on flights no matter the desination. On the right hand side you can also find an information sheet of the website that I
+use to do all of my flight bookings.  </p>
 
 
     </body>
