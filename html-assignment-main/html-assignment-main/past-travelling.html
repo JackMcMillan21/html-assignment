@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Past Travelling</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+    </head>
+    <body>
+
+        <!--This small section is just used for the heading of the page but I also included an attribute that makes the text span across the middle of the page
+        I use this attribute multiple different times throughout the website.-->
+        <h2 style="display: block;text-align:center;">Planning A Trip</h1>
+
+        <!-- The next 2 sections are used to travel from the home page to the sub page(s). I also made sure to bold them to make them more visible to user's.-->
+        <a href="index.html" width="50%" style="display: block;text-align:center;"><b>Home</b></a>
+
+
+        <a href="past-travelling.html" width="50%" style="display: block;text-align:center;"><b>Planning A Trip</b></a>
+
+        <!-- This table is used to show all of the prices available at this time for the destinations that are listed below leaving Winnipeg. This will help the 
+        user know exactly how much their trip will be to a specific location. I also used an attribute to change the style so that the text would be in the center of the page.-->
+        <div style="display: block;">
+            <table style="margin: 0 auto;">
+                <tr>
+                    <th>Flight</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Winnipeg -</td>
+                    <td>Toronto</td>
+                    <td>CA $526 *Round Trip*</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Winnipeg -</td>
+                    <td>Edmonton</td>
+                    <td>CA $780 *Round Trip*</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Winnipeg -</td>
+                    <td>Kelowna</td>
+                    <td>CA $846 *Round Trip*</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Winnipeg -</td>
+                    <td>Halifax</td>
+                    <td>CA $983 *Round Trip*</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <!--I used an attribute inside of the form tag so that all of the data inside of the form would be in the center of the page.-->
+        <div style="display: block;text-align: center;" >
+            <form sytle="display: inline-block; margin-left: auto; margin-right: auto; text-align: left;"> 
+                <!-- This section of code is used to select the destination of where the customer is going to be going from a dropdown menu. This makes it easy for the 
+                user to see all of the options and to ensure they have selected the correct one.-->
+                <label for= "travel"> Availible Destination's</label>
+                <select name = "travel" id = "travel">
+                    <option value = "toronto"> Toronto </option>
+                    <option value = "edmonton"> Edmonton </option>
+                    <option value = "kelowna"> Kelowna </option>
+                    <option value = "halifax"> Halifax </option>
+                </select></br>
+            
+                <!-- The next 2 sections of code are used to display a date picker where you can either type the date in with your keyboard or you can open the graphic 
+                calendar and select a date. This will help the user find exactly what date they are leaving and coming back from the trip.-->
+                <p> When are you booking your flight for?</p>
+                <p>Leaving date</p>
+                <input type="date" name="trip-date" id="trip-date">
+                <br>
+
+                <p> Returning</p>
+                <input type="date" name="trip-date" id="trip-date">
+                <br>
+
+                <!-- The next 3 sections of code is an input radio button that can be selected that states what seating they would like to have on the plane. Economy 
+                is checked by default because it is the most common input-->
+                <p> What seating would you like?</p>
+                <label for= "economy"> Economy </label>
+                <input type="radio" name="seating" id="seating" checked/>
+
+                <label for= "economy-plus"> Economy-Plus</label>
+                <input type="radio" name="seating" id="seating"/>
+
+                <label for= "first-class"> First-Class</label>
+                <input type="radio" name="seating" id="seating"/><br><br>
+
+                <!-- This next section is used as a checkbox to clarify if the costomer would like to place a deposit for the flight today or not.-->
+                <p>Would you like to place a deposit today?</p>
+                <label for="pay-now"><b>Yes</b></label>
+                <input type="checkbox" name="payment" id="payment" checked/>
+                <br>
+                <br>
+
+                <!--This small portion of code is used to add a submit button at the bottom of the form so that you can submit the form data to whereever the destination is-->
+                <input type="submit" name="submit" id="submit">
+
+            </form> 
+        </div>
+
+    </body>
+</html>
